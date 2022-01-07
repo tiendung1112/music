@@ -1,6 +1,6 @@
 var songs;
 
-fetch('http://localhost:4000/musics/get')
+fetch('/musics/get')
     .then(response => response.json())
     .then(musics => {
         songs = musics.map(function(music, index) {
